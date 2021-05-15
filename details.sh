@@ -17,3 +17,8 @@ echo $(whoami)
 users=$(cat /etc/passwd |cut -d ":" -f)
 
 echo $users
+
+
+#GET IP ADDRESS OF THE SYSTEM
+ip=$(ifconfig)
+echo $ip
